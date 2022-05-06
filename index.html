@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/styles/main.css" />
+        <title>Check List</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <div id="inputs">
+                <input
+                class="form-input"
+                type="text"
+                id="content"
+                minlength="2"
+                maxlength="500"
+                placeholder="당신의 체크리스트를 완성하세요!">
+            </div>
+            <div id="progress">
+                <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <ul id="list"></ul>
+            <div id="popup"></div>
+        </div>
+        <script src="src/scripts/main.js"></script>
+    </body>
+</html>
